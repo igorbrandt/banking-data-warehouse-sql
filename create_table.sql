@@ -16,4 +16,15 @@ CREATE TABLE IF NOT EXISTS balances (
 	client_balance INTEGER NOT NULL,
 	client_limit INTEGER NOT NULL,
 	FOREIGN KEY (client_id) REFERENCES clients(client_id)
-)
+);
+
+---- TABELA TRANSACTIONS ----
+CREATE TABLE IF NOT EXISTS transactions (
+	transaction_id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+	client_id UUID NOT NULL,
+	transaction_type CHAR(1) NOT NULL,
+	transactions_desciption VARCHAR(20) NOT NULL,
+	tranaction_value INTEGER NOT NULL,
+	transaction_time TIMESTAMP NOT NULL DEFAULT NOW(),
+	FOREIGN KEY (client_id) REFERENCES clients(client_id)
+);
