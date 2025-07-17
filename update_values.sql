@@ -1,3 +1,5 @@
+-- Atualizando valores
+
 UPDATE balances
 SET client_balance = client_balance + 
   CASE 

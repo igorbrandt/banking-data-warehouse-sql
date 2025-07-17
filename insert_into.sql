@@ -1,3 +1,5 @@
+-- Populando as tabelas
+
 ---- TABELA CLIENTS ----
 INSERT INTO clients (
 	client_name, 

@@ -1,3 +1,5 @@
+-- Criando um procedure simples
+
 CREATE OR REPLACE PROCEDURE make_transaction (
 	IN p_transaction_type CHAR(1),
 	IN p_transaction_description VARCHAR(20),

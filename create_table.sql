@@ -1,3 +1,5 @@
+-- Criando as tabelas
+
 ---- EXTENSÃO UUID ----
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
