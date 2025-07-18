@@ -1,4 +1,4 @@
--- Criando um procedure simples
+-- Modelo de procedure simples
 
 CREATE OR REPLACE PROCEDURE make_transaction (
 	IN p_transaction_type CHAR(1),
